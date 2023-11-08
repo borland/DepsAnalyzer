@@ -5,13 +5,8 @@ namespace DepsAnalyzer;
 
 public class DepsJsonParser
 {
-    public static DepsJsonDocument Parse(string fileName)
+    public static DepsJsonDocument? Parse(ReadOnlySpan<byte> utf8FileContents)
     {
-        throw new NotImplementedException();
-    }
-
-    public static DepsJsonDocument Parse(Stream fileContents)
-    {
-        throw new NotImplementedException();
+        return JsonSerializer.Deserialize(utf8FileContents, Model.DepsJsonSerializerContext.Context.DepsJsonDocument);
     }
 }
