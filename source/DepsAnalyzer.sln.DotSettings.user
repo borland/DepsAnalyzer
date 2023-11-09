@@ -2,6 +2,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e3059fb_002D802c_002D472d_002Dadd6_002D066b9b8bec5e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ParsesSimpleDocument" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5653AA44-946E-483E-B2C1-2C7E53C03015::net7.0::DepsAnalyzer.Tests.Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5653AA44-946E-483E-B2C1-2C7E53C03015::net7.0::DepsAnalyzer.Tests.DependencyGraphTests.BuildsSimpleGraph&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5653AA44-946E-483E-B2C1-2C7E53C03015::net7.0::DepsAnalyzer.Tests.DependencyGraphTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5653AA44-946E-483E-B2C1-2C7E53C03015::net7.0::DepsAnalyzer.Tests.MermaidDiagramTests.DrawsSimpleExample&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5653AA44-946E-483E-B2C1-2C7E53C03015::net7.0::DepsAnalyzer.Tests.MermaidDiagramTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad77888f_002D8443_002D44da_002Da1e9_002D48a77cc93a7d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ParsesSimpleDocument #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
