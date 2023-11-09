@@ -18,7 +18,7 @@ public class MermaidDiagramTests
         var root = DN("Root", "0", myMain);
 
         var str = MermaidDiagram.Generate(root);
-        str.Should().Be(@"flowchart TD
+        str.Should().Be(@"flowchart LR
 Root_0[""Root@0""]
 MyMainPackage_1_0[""MyMainPackage@1.0""]
 ThirdPartyPackageA_2_0[""ThirdPartyPackageA@2.0""]
@@ -46,7 +46,7 @@ MyLibraryPackage_1_1 --> ThirdPartyPackageB_7_5
         var root = DN("Root", "0", myMain);
 
         var str = MermaidDiagram.Generate(root, omitRootNode: true);
-        str.Should().Be(@"flowchart TD
+        str.Should().Be(@"flowchart LR
 MyMainPackage_1_0[""MyMainPackage@1.0""]
 ThirdPartyPackageA_2_0[""ThirdPartyPackageA@2.0""]
 MyLibraryPackage_1_1[""MyLibraryPackage@1.1""]

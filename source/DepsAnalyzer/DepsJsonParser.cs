@@ -7,6 +7,6 @@ public class DepsJsonParser
 {
     public static DepsJsonDocument? Parse(ReadOnlySpan<byte> utf8FileContents)
     {
-        return JsonSerializer.Deserialize(utf8FileContents, Model.DepsJsonSerializerContext.Context.DepsJsonDocument);
+        return JsonSerializer.Deserialize(utf8FileContents, DepsJsonSerializerContext.Context.DepsJsonDocument);
     }
 }

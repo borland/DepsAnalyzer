@@ -8,7 +8,7 @@ public class MermaidDiagram
     public static string Generate(DependencyNode node, bool omitRootNode = false)
     {
         var sb = new StringBuilder();
-        sb.AppendLine("flowchart TD");
+        sb.AppendLine("flowchart LR");
 
         // nodes to Omit still get processed, but not printed
         var nodesToOmit = new HashSet<PackageAndVersion>();
@@ -56,5 +56,7 @@ public class MermaidDiagram
     }
     
     // mermaid node identifiers can't contain special characters
-    static string NodeIdentifier(PackageAndVersion pv) => $"{pv.Package}_{pv.Version.Replace('.', '_')}";
+    static string NodeIdentifier(PackageAndVersion pv) => $"{Sanitize(pv.Package)}_{Sanitize(pv.Version)}";
+
+    static string Sanitize(string input) => input.Replace('.', '_').Replace("*", "_").Replace(".", "_");
 }
